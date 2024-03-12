@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    width: 170px;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 2fr 1fr 4fr 1fr;
+    grid-template-areas: " header header"
+    "form menu"
+    "body menu"
+    "footer menu";
+}
+
+.page .headerContent{
+    background: rgb(161, 161, 161);
+    grid-area: header;
+}
+
+.page .menuContent{
+    background: rgb(135, 135, 135);
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page .fromContent{
+    background: rgb(114, 114, 114);
+    grid-area: form;
+}
+
+.page .bodyContent{
+    background: rgb(201, 201, 201);
+    grid-area: body;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+.page .bodyContent .tituloArticulos {
+    width: 100%;
+    text-align: center;
+}
+
+.producto {
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 16px;
+    margin: 16px;
+    padding: 8px;
+}
+
+.producto .descripcion {
+    display: none;
+}
+
+.producto:hover {
+    border-color: blue;
+}
+
+.producto:hover .descripcion{
+    display: block;
+    color: blue;
+}
+
+.page .footerContent{
+    background: rgb(141, 131, 131);
+    grid-area: footer;
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: fixed;
+    top:0px;
+    left: 0px;
+}
+
+.h1{
+    text-align:center ;
+    font-size: 55px;
+    font-family:cursive;
+}
