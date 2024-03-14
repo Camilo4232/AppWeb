@@ -22,12 +22,12 @@ img {
 }
 
 .page .headerContent{
-    background: rgb(161, 161, 161);
+    background: orange;
     grid-area: header;
 }
 
 .page .menuContent{
-    background: rgb(135, 135, 135);
+    background: rgb(204, 155, 112);
     grid-area: menu;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@ img {
 }
 
 .page .fromContent{
-    background: rgb(114, 114, 114);
+    background: rgb(215, 90, 55);
     grid-area: form;
 }
 
@@ -69,12 +69,12 @@ img {
 }
 
 .producto:hover {
-    border-color: rgb(89, 255, 0);
+    border-color: rgb(0, 68, 255);
 }
 
 .producto:hover .descripcion{
     display: block;
-    color: rgb(255, 255, 0);
+    color: red;
 }
 
 .page .footerContent{
