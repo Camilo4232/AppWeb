@@ -53,6 +53,7 @@ img {
 .page .bodyContent .tituloArticulos {
     width: 100%;
     text-align: center;
+    font-family: cursive;
 }
 
 .producto {
@@ -68,12 +69,12 @@ img {
 }
 
 .producto:hover {
-    border-color: blue;
+    border-color: rgb(89, 255, 0);
 }
 
 .producto:hover .descripcion{
     display: block;
-    color: blue;
+    color: rgb(255, 255, 0);
 }
 
 .page .footerContent{
